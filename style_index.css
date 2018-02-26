@@ -1,0 +1,60 @@
+body {
+	
+	background-size: 100%;
+}
+
+
+p {
+	bottom: 0;
+	color: white;
+	opacity: 0.1;
+	position: fixed;
+	left: 45%;
+	transition: all 1s ease-out;
+}
+a {
+	color: yellow;
+	font-style: italic;
+}
+ p:hover {
+ 	opacity: 0.8;
+ 	transition: all 1s ease-out;
+ 	transform: scale(1.05);
+ }
+
+
+.btn {
+	background: linear-gradient(45deg, rgba(256,256,256,0.5) 0%,rgba(128,128,256,0.5) 50%,rgba(0,0,256,0.5) 100%);
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px rgba(34,62,66,.25);
+	color: #eee;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 16px 52px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: box-shadow 1s ease;
+	transition: all 1.5s ease;
+	opacity: 0.8;
+	position: absolute;
+	top: 60%;	
+	left: 44%;
+}
+
+.btn:hover {
+	background: linear-gradient(45deg, rgba(256,256,256,0.8) 0%,rgba(128,128,256,0.8) 50%,rgba(0,0,256,0.8) 100%);
+	box-shadow: 0px 8px 4px rgba(34,62,66,.5);
+	-webkit-transition: box-shadow 1s ease;
+	transition: all 0.5s ease;
+}
+
+.img1 {
+	width: 60%;
+	opacity: 0.6;
+	transition: all 1s ease-out;
+}
+.img2 {
+	width: 60%;
+	opacity: 1;
+	transition: all 1s ease-out;
+}

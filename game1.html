@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Игра</title>
+	<link rel="stylesheet" type="text/css" href="game1.css">
+	<script type="text/javascript" src="game1.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<img src="game_1/brb_1.png" class="person" id="brb">
+	<img src="game_1/dru.png" class="person" id="player">
+
+	<img src="game_1/brb_1.png" class="personwhenplay" id="brb1">
+	<img src="game_1/dru.png" class="personwhenplay" id="player1">
+
+
+
+<p align="center" id="whatplayer">Выберите первого игрока</p>
+<h1 align="center" id="question"></h1>
+<table class="table" id="field" >
+	<tr>
+		<td class="cell_res" id="key1" onclick="kkk()"><img src="letters/not.png" class="key" id="k1"></td>
+		<td class="cell_res" id="key2" onclick="kkk()"><img src="letters/not.png" class="key" id="k2"></td>
+		<td class="cell_res" id="key3" onclick="kkk()"><img src="letters/not.png" class="key" id="k3"></td>
+		<td class="cell_res" id="key4" onclick="kkk()"><img src="letters/not.png" class="key" id="k4"></td>
+		<td class="cell_res" id="key5" onclick="kkk()"><img src="letters/not.png" class="key" id="k5"></td>
+		<td class="cell_res" id="key6" onclick="kkk()"><img src="letters/not.png" class="key" id="k6"></td>
+		<td class="cell_res" id="key7" onclick="kkk()"><img src="letters/not.png" class="key" id="k7"></td>
+		<td class="cell_res" id="key8" onclick="kkk()"><img src="letters/not.png" class="key" id="k8"></td>
+		<td class="cell_res" id="key9" onclick="kkk()"><img src="letters/not.png" class="key" id="k9"></td>
+		<td class="cell_res" id="key10" onclick="kkk()"><img src="letters/not.png" class="key" id="k10"></td>
+		<td class="cell_res" id="key11" onclick="kkk()"><img src="letters/not.png" class="key" id="k11"></td>
+		<td class="cell_res" id="key12" onclick="kkk()"><img src="letters/not.png" class="key" id="k12"></td>
+		<td class="cell_res" id="key13" onclick="kkk()"><img src="letters/not.png" class="key" id="k13"></td>
+	</tr>
+	
+</table>
+
+<table class="table" id="pole" >
+	<tr>
+		<td class="cell"onclick="letter(); letter1()" id="ke1"><img src="letters/а.png"></td>
+		<td class="cell"onclick="letter(); letter2()" id="ke2"><img src="letters/б.png"></td>
+		<td class="cell"onclick="letter(); letter3()" id="ke3"><img src="letters/в.png"></td>
+		<td class="cell"onclick="letter(); letter4()" id="ke4"><img src="letters/г.png"></td>
+		<td class="cell"onclick="letter(); letter5()" id="ke5"><img src="letters/д.png"></td>
+		<td class="cell"onclick="letter(); letter6()" id="ke6"><img src="letters/е.png"></td>
+		<td class="cell"onclick="letter(); letter7()" id="ke7"><img src="letters/ё.png"></td>
+		<td class="cell"onclick="letter(); letter8()" id="ke8"><img src="letters/ж.png"></td>
+		<td class="cell"onclick="letter(); letter9()" id="ke9"><img src="letters/з.png"></td>
+		<td class="cell"onclick="letter(); letter10()" id="ke10"><img src="letters/и.png"></td>
+		<td class="cell"onclick="letter(); letter11()" id="ke11"><img src="letters/й.png"></td>
+	</tr>
+	<tr>
+		<td class="cell"onclick="letter(); letter12()" id="ke12"><img src="letters/к.png"></td>
+		<td class="cell"onclick="letter(); letter13()" id="ke13"><img src="letters/л.png"></td>
+		<td class="cell"onclick="letter(); letter14()" id="ke14"><img src="letters/м.png"></td>
+		<td class="cell"onclick="letter(); letter15()" id="ke15"><img src="letters/н.png"></td>
+		<td class="cell"onclick="letter(); letter16()" id="ke16"><img src="letters/о.png"></td>
+		<td class="cell"onclick="letter(); letter17()" id="ke17"><img src="letters/п.png"></td>
+		<td class="cell"onclick="letter(); letter18()" id="ke18"><img src="letters/р.png"></td>
+		<td class="cell"onclick="letter(); letter19()" id="ke19"><img src="letters/с.png"></td>
+		<td class="cell"onclick="letter(); letter20()" id="ke20"><img src="letters/т.png"></td>
+		<td class="cell"onclick="letter(); letter21()" id="ke21"><img src="letters/у.png"></td>
+		<td class="cell"onclick="letter(); letter22()" id="ke22"><img src="letters/ф.png"></td>
+	</tr>
+	<tr>
+		<td class="cell"onclick="letter(); letter23()" id="ke23"><img src="letters/х.png"></td>
+		<td class="cell"onclick="letter(); letter24()" id="ke24"><img src="letters/ц.png"></td>
+		<td class="cell"onclick="letter(); letter25()" id="ke25"><img src="letters/ч.png"></td>
+		<td class="cell"onclick="letter(); letter26()" id="ke26"><img src="letters/ш.png"></td>
+		<td class="cell"onclick="letter(); letter27()" id="ke27"><img src="letters/щ.png"></td>
+		<td class="cell"onclick="letter(); letter28()" id="ke28"><img src="letters/ъ.png"></td>
+		<td class="cell"onclick="letter(); letter29()" id="ke29"><img src="letters/ы.png"></td>
+		<td class="cell"onclick="letter(); letter30()" id="ke30"><img src="letters/ь.png"></td>
+		<td class="cell"onclick="letter(); letter31()" id="ke31"><img src="letters/э.png"></td>
+		<td class="cell"onclick="letter(); letter32()" id="ke32"><img src="letters/ю.png"></td>
+		<td class="cell"onclick="letter(); letter33()" id="ke33"><img src="letters/я.png"></td>
+	</tr>
+</table>
+
+<p class="score" id="score1">Score: 0</p>
+<p class="score" id="score2">Score: 0</p>
+
+<img src="img_pers/1.png" class="photo" id="ph1" title="Анжелика" onclick="chooseigrok1()">
+<img src="img_pers/2.png" class="photo" id="ph2" title="Павлик" onclick="chooseigrok2()">
+<img src="img_pers/3.png" class="photo" id="ph3" title="Костян" onclick="chooseigrok3()">
+<img src="img_pers/4.png" class="photo" id="ph4" title="Артёмка" onclick="chooseigrok4()">
+<img src="img_pers/5.png" class="photo" id="ph5" title="Вольга" onclick="chooseigrok5()">
+<img src="img_pers/6.png" class="photo" id="ph6" title="Вадик" onclick="chooseigrok6()">
+<img src="img_pers/7.png" class="photo" id="ph7" title="Лада" onclick="chooseigrok7()">
+<img src="img_pers/8.png" class="photo" id="ph8" title="Олежа" onclick="chooseigrok8()">
+<img src="img_pers/9.png" class="photo" id="ph9" title="Никитис" onclick="chooseigrok9()">
+<img src="img_pers/10.png" class="photo" id="ph10" title="Эндрю" onclick="chooseigrok10()">
+<img src="img_pers/11.png" class="photo" id="ph11" title="Сандра" onclick="chooseigrok11()">
+<img src="img_pers/12.png" class="photo" id="ph12" title="Винц" onclick="chooseigrok12()">
+<img src="images/win1.gif" class="when_win" id="xxx" >
+<img src="images/win.gif"  id="kub1" >
+<img src="images/win.gif"  id="kub2" >
+
+ <center><a class="btn" id="id1" href="game1.html">Сыграть еще раз</a></center>
+
+</body>
+</html>
